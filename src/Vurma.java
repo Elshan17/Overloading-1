@@ -12,4 +12,3 @@ public class Vurma {
     }
 }
 
-git add .

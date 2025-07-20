@@ -4,24 +4,19 @@ public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("İlk tam ədəd: ");
-        int a = input.nextInt();
+        System.out.print("Kvadratın tərəfini daxil et: ");
+        int side = input.nextInt();
+        System.out.println("Kvadratın sahəsi: " + FiqurSaheleri.area(side));
 
-        System.out.print("İkinci tam ədəd: ");
-        int b = input.nextInt();
+        System.out.print("Düzbucaqlının uzunluğunu daxil et: ");
+        int length = input.nextInt();
+        System.out.print("Düzbucaqlının enini daxil et: ");
+        int width = input.nextInt();
+        System.out.println("Düzbucaqlının sahəsi: " + FiqurSaheleri.area(length, width));
 
-        System.out.print("Üçüncü tam ədəd: ");
-        int c = input.nextInt();
-
-        System.out.print("İlk onluq ədəd: ");
-        double x = input.nextDouble();
-
-        System.out.print("İkinci onluq ədəd: ");
-        double y = input.nextDouble();
-
-        System.out.println("İki tam ədədin hasili: " + Vurma.multiply(a, b));
-        System.out.println("Üç tam ədədin hasili: " + Vurma.multiply(a, b, c));
-        System.out.println("İki onluq ədədin hasili: " + Vurma.multiply(x, y));
+        System.out.print("Dairənin radiusunu daxil et: ");
+        double radius = input.nextDouble();
+        System.out.println("Dairənin sahəsi: " + FiqurSaheleri.area(radius));
 
         input.close();
     }
