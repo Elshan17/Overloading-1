@@ -3,21 +3,16 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-
-        System.out.print("Kvadratın tərəfini daxil et: ");
-        int side = input.nextInt();
-        System.out.println("Kvadratın sahəsi: " + FiqurSaheleri.area(side));
-
-        System.out.print("Düzbucaqlının uzunluğunu daxil et: ");
-        int length = input.nextInt();
-        System.out.print("Düzbucaqlının enini daxil et: ");
-        int width = input.nextInt();
-        System.out.println("Düzbucaqlının sahəsi: " + FiqurSaheleri.area(length, width));
-
-        System.out.print("Dairənin radiusunu daxil et: ");
-        double radius = input.nextDouble();
-        System.out.println("Dairənin sahəsi: " + FiqurSaheleri.area(radius));
-
+        System.out.print("Santimetr daxil et: ");
+        int cm = input.nextInt();
+        System.out.println("Metrlə: " + Olcu.convert(cm));
+        System.out.print("Kiloqram daxil et: ");
+        double kg = input.nextDouble();
+        System.out.println("Qramla: " + Olcu.convert(kg));
+        input.nextLine();
+        System.out.print("Temperaturu (string olaraq) daxil et: ");
+        String tempStr = input.nextLine();
+        System.out.println("Float kimi: " + Olcu.convert(tempStr));
         input.close();
     }
 }
