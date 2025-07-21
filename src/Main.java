@@ -1,11 +1,10 @@
 public class Main {
     public static void main(String[] args) {
+        Employee e1 = new Employee();
+        Employee m1 = new Manager();
 
-        InfoPrinter printer = new InfoPrinter();
-
-        printer.printInfo();
-        printer.printInfo("Elsen");
-        printer.printInfo("Elsen", 28);
-        printer.printInfo("Elsen", 28, "Bakı");
+        System.out.println("İşçinin maaşı: " + e1.calculateSalary());
+        System.out.println("Menecerin maaşı: " + m1.calculateSalary());
     }
 }
+
